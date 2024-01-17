@@ -18,9 +18,9 @@
    В браузере открыта страница https://hexlet-products-store.vercel.app/
   steps:
    - Открыть раздел категории.
-   - Выбрать категорию "Baking Food Items".
+   - Выбрать категорию "home-decoration".
   expected-result: |
-  В списке отображаются те товары, которые относятся к  категории "Baking Food Items" .
+  В списке отображаются те товары, которые относятся к  категории "home-decoration" .
   
   - summary: |
    Проверка фильтрации товаров по цене.
