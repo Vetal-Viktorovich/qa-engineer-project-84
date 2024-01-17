@@ -28,9 +28,9 @@
    Пользователь должен иметь возможность искать товары по ключевому слову или категории.
   prerequisites: |
    В браузере открыта страница https://hexlet-products-store.vercel.app/
-   steps:
+  steps:
    - Ввести несуществующее ключевое слово для поиска.
-   expected-result: |
+  expected-result: |
   Система выдаёт надпись "Ничего не найдено!".
   ????????????????????????????????????????????????????
   ---
@@ -40,62 +40,62 @@
    Пользователь должен иметь возможность фильтровать товары.
   prerequisites: |
    В браузере открыта страница https://hexlet-products-store.vercel.app/
-   steps:
+  steps:
    -Ввести минимальную и максимальную цену в поле фильтра "Цена".  
-   expected-result: |
+  expected-result: |
   Отображаются товары, цена которых находится в заданном диапазоне.
 
-    - summary: |
+  - summary: |
    Проверка фильтрации товаров по производителю
   requirement: |
    Пользователь должен иметь возможность фильтровать товары.
   prerequisites: |
    В браузере открыта страница https://hexlet-products-store.vercel.app/
-   steps:
+  steps:
    -Выбрать любого производителя из списка.  
-   expected-result: |
+  expected-result: |
   Отображаются товары относящиеся только к производителю.
 
-     - summary: |
+ - summary: |
    Проверка фильтрации товаров по наличию
-  requirement: |
+ requirement: |
    Пользователь должен иметь возможность фильтровать товары.
-  prerequisites: |
+ prerequisites: |
    В браузере открыта страница https://hexlet-products-store.vercel.app/
-   steps:
+ steps:
    -Установить чекбокс в графе "В наличии".  
-   expected-result: |
+ expected-result: |
   Отображаются только те товары, которые находятся в наличии магазина. 
-  ---
-   - summary: |
+ ---
+ - summary: |
    Просмотр подробной информации о товаре
-  requirement: |
+ requirement: |
   Пользователь должен иметь возможность просматривать товары и просматривать подробную информацию о товаре.
-  prerequisites: |
+ prerequisites: |
    В браузере открыта страница https://hexlet-products-store.vercel.app/
-   steps:
+ steps:
    -Выбрать любой товар из списка, для просмотра информации о товаре 
-   expected-result: |
+ expected-result: |
   Отображаются информация о выбранном товаре 
-  ---
-     - summary: |
+ ---
+ - summary: |
    Добавление товара в корзину
-  requirement: |
+ requirement: |
    Пользователь должен иметь возможность добавлять товары в корзину и просматривать содержимое корзины. 
-  prerequisites: |
+ prerequisites: |
    В браузере открыта страница https://hexlet-products-store.vercel.app/
-   steps:
+ steps:
    -Выбрать любой товар из списка и нажать кнопку "В корзину"
-   expected-result: |
+ expected-result: |
   Товар успешно добавлен в корзину
 
-    - summary: |
+ - summary: |
    Просмотр содержимиго корзины
-  requirement: |
+ requirement: |
    Пользователь должен иметь возможность добавлять товары в корзину и просматривать содержимое корзины. 
-  prerequisites: |
+ prerequisites: |
    В браузере открыта страница https://hexlet-products-store.vercel.app/
-   steps:
-   -Нажать на вкладку "Корзина"
-   expected-result: |
+ steps:
+  -Нажать на вкладку "Корзина"
+ expected-result: |
   Открывается содержимое корзины
