@@ -31,3 +31,6 @@ test-cases:
 - summary: |
    Просмотр содержимиго корзины.
   status: pass
+
+bugreports:
+   
