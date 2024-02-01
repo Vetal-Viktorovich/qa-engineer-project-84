@@ -18,7 +18,7 @@ test-cases:
 
   - summary: |
       Проверка фильтрации товаров по наличию.
-  status: fail
+  status: pass
  
   - summary: |
       Просмотр подробной информации о товаре.
@@ -57,7 +57,7 @@ actual-result: |
       ОС Windows 8.1
   steps-to-reproduce: |
       Открыть сайт: https://hexlet-products-store.vercel.app/
-      Во вкладке Язык или Language выбрать Russian
+      Во вкладке Язык или "Language" выбрать "Russian"
       Открыть вкладку Категория
       Прочитать название категорий
   expected-result: |
@@ -110,19 +110,6 @@ actual-result: |
       На странице магазина появляются товары, кнопка "В корзину" некоторых товаров имеет размер "105.58 х 38" у других же товаров кнопка имеет размер "97.39 х 62"
 
   - summary: |
-      Разтянутое изображение у товара "Handcraft Chinese style"
-  environment: |
-      Yandex 23.11.3.935 (64-bit)
-      ОС Windows 8.1
-  steps-to-reproduce: |
-      Открыть сайт: https://hexlet-products-store.vercel.app/
-      Пролистать список товаров вниз до товара "Handcraft Chinese style"
-  expected-result: |
-      В окне товара отчетливо видно изображение товара
-  actual-result: |
-      В окне товара изображение товара разтянуто по горизонтали
-
-  - summary: |
       Нет возможности искать товар по каталогу без привязки к сраницам
   environment: |
       Yandex 23.11.3.935 (64-bit)
@@ -131,6 +118,23 @@ actual-result: |
       Открыть сайт: https://hexlet-products-store.vercel.app/
       Ввести в форму поиска название товара с любой страницы кроме главной, например "Plastic Table"
   expected-result: |
-     На странице появляется нужный нам товар
-actual-result: |
-     На странице появляется надпись "Ничего не найдено!" или "Nothing found!"
+      На странице появляется нужный нам товар
+  actual-result: |
+      На странице появляется надпись "Ничего не найдено!" или "Nothing found!"
+
+  - summary: |
+      При возвращении из корзины  меняется язык  
+   environment: |
+      Yandex 23.11.3.935 (64-bit)
+      ОС Windows 8.1
+  steps-to-reproduce: |
+      Открыть сайт: https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      Нажать на вкладку "Language" и выбрать "Russian"
+      Нажать на кнопку "Корзина"
+      Нажать на кнопку "Магазин"
+  expected-result: |
+      Открывается страница на русском языке который мы выбрали
+  actual-result: |
+      Открывается страница на английском языке 
+
+  
