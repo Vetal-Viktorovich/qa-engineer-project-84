@@ -39,7 +39,7 @@ bugreports:
       Yandex 23.11.3.935 (64-bit)
       ОС Windows 8.1
   steps-to-reproduce: |
-      Открыть сайт: https://hexlet-products-store.vercel.app/
+      Открыть сайт: https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       Развернуть вкладку Категория
       Ознакомиться со списком категорий
       Нажать кнопку Следующая
@@ -56,7 +56,7 @@ actual-result: |
       Yandex 23.11.3.935 (64-bit)
       ОС Windows 8.1
   steps-to-reproduce: |
-      Открыть сайт: https://hexlet-products-store.vercel.app/
+      Открыть сайт: https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       Во вкладке Язык или "Language" выбрать "Russian"
       Открыть вкладку Категория
       Прочитать название категорий
@@ -66,27 +66,13 @@ actual-result: |
       Категории товаров отображаются на английском языке
     
   - summary: |
-      Не учитывается скидка при фильтрации по цене
-  environment: |
-      Yandex 23.11.3.935 (64-bit)
-      ОС Windows 8.1
-  steps-to-reproduce: |
-      Открыть сайт: https://hexlet-products-store.vercel.app/
-      Во вкладке Category выбрать smartphones
-      Во вкладке Цена установить значение до 500
-  expected-result: |
-      Товар фильтруется по цене с учетом скидки
-  actual-result: |
-      Фильтр учитывает цену без скидки
-
-  - summary: |
       Кнопки товаров "В корзину" разного размера   
   environment: |
       Yandex 23.11.3.935 (64-bit)
       ОС Windows 8.1
   steps-to-reproduce: |
       Открыть сайт: https://screenfly.org/
-      В поле ввода ввести ссылку интернет-магазина "https://hexlet-products-store.vercel.app/" и нажать кнопку "вперёд"
+      В поле ввода ввести ссылку интернет-магазина "https://products-store-git-v2bugfixes-hexlet-components.vercel.app/" и нажать кнопку "вперёд"
       Открыть вкладку Desktop
       Выбрать <<13" Notebook  1280х80>>
   expected-result: |
@@ -101,7 +87,7 @@ actual-result: |
       ОС Windows 8.1
   steps-to-reproduce: |
       Открыть сайт: https://screenfly.org/
-      В поле ввода ввести ссылку интернет-магазина "https://hexlet-products-store.vercel.app/" и нажать кнопку "вперёд"
+      В поле ввода ввести ссылку интернет-магазина "https://products-store-git-v2bugfixes-hexlet-components.vercel.app/" и нажать кнопку "вперёд"
       Открыть вкладку Desktop
       Выбрать <<15" Notebook  1366 х 768>>
   expected-result: |
@@ -115,7 +101,7 @@ actual-result: |
       Yandex 23.11.3.935 (64-bit)
       ОС Windows 8.1
   steps-to-reproduce: |
-      Открыть сайт: https://hexlet-products-store.vercel.app/
+      Открыть сайт: https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       Ввести в форму поиска название товара с любой страницы кроме главной, например "Plastic Table"
   expected-result: |
       На странице появляется нужный нам товар
