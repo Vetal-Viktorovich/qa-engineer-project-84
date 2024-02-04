@@ -20,13 +20,10 @@ status: pass
  status: pass 
  
  - summary: |
-   Просмотр подробной информации о товаре
+   Проверка открытия карточки товара.
  status: pass
 
  - summary: |
    Добавление товара в корзину
  status: pass
  
- - summary: |
-   Просмотр содержимиго корзины
- status: pass
