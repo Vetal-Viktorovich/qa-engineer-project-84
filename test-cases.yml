@@ -6,7 +6,7 @@
   prerequisites: |
    В браузере открыта страница https://hexlet-products-store.vercel.app/
   steps:
-   - Ввести в поле "Поиск" ключевое слово "Samsung".
+   - Ввести в поле "Поиск" ключевое слово, например "Samsung".
    expected-result: |
    В списке отображаются те товары, в названии которых указано ключевое слово "Samsung".
   
@@ -18,7 +18,7 @@
    В браузере открыта страница https://hexlet-products-store.vercel.app/
   steps:
    - Открыть раздел категории.
-   - Выбрать категорию "home-decoration".
+   - Выбрать категорию, например "home-decoration".
   expected-result: |
   В списке отображаются те товары, которые относятся к  категории "home-decoration" .
   
