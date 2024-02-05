@@ -21,34 +21,28 @@ test-cases:
   status: pass
  
   - summary: |
-      Просмотр подробной информации о товаре.
+      Проверка открытия карточки товара.
   status: pass
 
  - summary: |
    Добавление товара в корзину.
   status: pass
- 
-  - summary: |
-      Просмотр содержимиго корзины.
-  status: pass
 
 bugreports:
   - summary: |
-      Нет поиска по всему каталогу товаров при выборе фильтра по категории
+   Список категорий изменяется при переключении страниц каталога
   environment: |
-      Yandex 23.11.3.935 (64-bit)
-      ОС Windows 8.1
-  steps-to-reproduce: |
-      Открыть сайт: https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-      Развернуть вкладку Категория
-      Ознакомиться со списком категорий
-      Нажать кнопку Следующая
-      Ознакомиться со списком категорий
-      Сравнить с развернутым ранее
-  expected-result: |
-      Список всегда отображает все доступные категории
+   Yandex 23.11.3.935 (64-bit)
+   ОС Windows 8.1
+steps-to-reproduce: |  
+   Развернуть вкладку Категория
+   Ознакомиться со списком категорий
+   Нажать кнопку Следующая
+   Ознакомиться со списком категорий
+expected-result: |
+   Список всегда отображает все доступные категории
 actual-result: |
-      Список неполный и изменяется при перелистывании страниц каталога
+   Список неполный и изменяется при переключении страниц каталога
     
   - summary: |
       Нет русской локализации для категорий товаров
@@ -56,7 +50,6 @@ actual-result: |
       Yandex 23.11.3.935 (64-bit)
       ОС Windows 8.1
   steps-to-reproduce: |
-      Открыть сайт: https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       Во вкладке Язык или "Language" выбрать "Russian"
       Открыть вкладку Категория
       Прочитать название категорий
@@ -71,37 +64,20 @@ actual-result: |
       Yandex 23.11.3.935 (64-bit)
       ОС Windows 8.1
   steps-to-reproduce: |
-      Открыть сайт: https://screenfly.org/
-      В поле ввода ввести ссылку интернет-магазина "https://products-store-git-v2bugfixes-hexlet-components.vercel.app/" и нажать кнопку "вперёд"
-      Открыть вкладку Desktop
-      Выбрать <<13" Notebook  1280х80>>
+      Открыть DevTools
+      Открыть панель инструментов устройства
+      Выбрать разрешение экрана " 1366 х 768"
   expected-result: |
       На странице магазина появляются товары, все кнопки "В корзину" одинакового размера
   actual-result: |
       На странице магазина появляются товары, кнопка "В корзину" некоторых товаров имеет размер "105.58 х 38" у других же товаров кнопка имеет размер "97.39 х 62"
 
-  - summary: |
-      Кнопки товаров "В корзину" разного размера   
-  environment: |
-      Yandex 23.11.3.935 (64-bit)
-      ОС Windows 8.1
-  steps-to-reproduce: |
-      Открыть сайт: https://screenfly.org/
-      В поле ввода ввести ссылку интернет-магазина "https://products-store-git-v2bugfixes-hexlet-components.vercel.app/" и нажать кнопку "вперёд"
-      Открыть вкладку Desktop
-      Выбрать <<15" Notebook  1366 х 768>>
-  expected-result: |
-      На странице магазина появляются товары, все кнопки "В корзину" одинакового размера
-  actual-result: |
-      На странице магазина появляются товары, кнопка "В корзину" некоторых товаров имеет размер "105.58 х 38" у других же товаров кнопка имеет размер "97.39 х 62"
-
-  - summary: |
+   - summary: |
       Нет возможности искать товар по каталогу без привязки к сраницам
   environment: |
       Yandex 23.11.3.935 (64-bit)
       ОС Windows 8.1
   steps-to-reproduce: |
-      Открыть сайт: https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       Ввести в форму поиска название товара с любой страницы кроме главной, например "Plastic Table"
   expected-result: |
       На странице появляется нужный нам товар
@@ -114,7 +90,6 @@ actual-result: |
       Yandex 23.11.3.935 (64-bit)
       ОС Windows 8.1
   steps-to-reproduce: |
-      Открыть сайт: https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       Нажать на вкладку "Language" и выбрать "Russian"
       Нажать на кнопку "Корзина"
       Нажать на кнопку "Магазин"
@@ -128,8 +103,7 @@ actual-result: |
   environment: |
       Yandex 23.11.3.935 (64-bit)
       ОС Windows 8.1
-  steps-to-reproduce: |
-      Открыть сайт: https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+  steps-to-reproduce: |      
       В фильтре товаров по производителю выбрать любого производителя кроме Apple, Samsung, Huawei, Impression of Acqua Di Gio, Fog Scent Xpressio, Hemani Tea, fauji, Flying Wooden, luxury palace 
   expected-result: |  
       На странице магазина отображается товар у которого кнопка "В корзину" находится в границах рамки описания товара
