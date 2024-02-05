@@ -74,7 +74,6 @@ environment: |
    Yandex 23.11.3.935 (64-bit)
    ОС Windows 8.1
 steps-to-reproduce: |
-   Открыть сайт: https://hexlet-products-store.vercel.app/
    Пролистать список товаров вниз до товара "Handcraft Chinese style"
 expected-result: |
    В окне товара отчетливо видно изображение товара
@@ -87,7 +86,6 @@ environment: |
    Yandex 23.11.3.935 (64-bit)
    ОС Windows 8.1
 steps-to-reproduce: |
-   Открыть сайт: https://hexlet-products-store.vercel.app/
    Ввести в форму поиска название товара с любой страницы кроме главной, например "Plastic Table"
 expected-result: |
    На странице появляется нужный нам товар
