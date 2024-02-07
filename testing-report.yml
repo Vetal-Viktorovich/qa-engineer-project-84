@@ -5,25 +5,25 @@
   
 - summary: |
    Проверка поиска товара по категории.
-status: pass
+  status: pass
   
  - summary: |
    Проверка фильтрации товаров по цене.
- status: pass
+  status: pass
 
  - summary: |
    Проверка фильтрации товаров по производителю
- status: pass
+  status: pass
 
  - summary: |
    Проверка фильтрации товаров по наличию
- status: pass 
+  status: pass 
  
  - summary: |
    Проверка открытия карточки товара.
- status: pass
+  status: pass
 
  - summary: |
    Добавление товара в корзину
- status: pass
+  status: pass
  
