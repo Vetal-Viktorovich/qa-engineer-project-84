@@ -7,23 +7,23 @@
    Проверка поиска товара по категории.
   status: pass
   
- - summary: |
+- summary: |
    Проверка фильтрации товаров по цене.
   status: pass
 
- - summary: |
+- summary: |
    Проверка фильтрации товаров по производителю
   status: pass
 
- - summary: |
+- summary: |
    Проверка фильтрации товаров по наличию
   status: pass 
  
- - summary: |
+- summary: |
    Проверка открытия карточки товара.
   status: pass
 
- - summary: |
+- summary: |
    Добавление товара в корзину
   status: pass
  
