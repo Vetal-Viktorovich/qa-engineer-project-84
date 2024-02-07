@@ -1,7 +1,7 @@
 ---
 - summary: |
     Список категорий изменяется при переключении страниц каталога
-environment: |
+ environment: |
     Yandex 23.11.3.935 (64-bit)
     ОС Windows 8.1
   steps-to-reproduce: |
