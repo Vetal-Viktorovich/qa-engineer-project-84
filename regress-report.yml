@@ -44,21 +44,21 @@ expected-result: |
 actual-result: |
   Список неполный и изменяется при переключении страниц каталога
 
- - summary: |
+- summary: |
    Нет русской локализации для категорий товаров
-  environment: |
+ environment: |
    Yandex 23.11.3.935 (64-bit)
    ОС Windows 8.1
-  steps-to-reproduce: |
+steps-to-reproduce: |
    Во вкладке Язык или "Language" выбрать "Russian"
    Открыть вкладку Категория
    Прочитать название категорий
-  expected-result: |
+expected-result: |
    Категории товаров отображаются на русском языке
-  actual-result: |
+actual-result: |
    Категории товаров отображаются на английском языке
 
-  - summary: |
+- summary: |
   Кнопки товаров "В корзину" разного размера   
   environment: |
   Yandex 23.11.3.935 (64-bit)
