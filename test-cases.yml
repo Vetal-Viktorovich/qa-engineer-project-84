@@ -1,15 +1,15 @@
 ---
 - summary: | 
    Проверка фильтрации товаров по производителю.
-   requirement: |
+  requirement: |
    Пользователь должен иметь возможность фильтровать товары.
-   prerequisites: |
+  prerequisites: |
    Открыта страница магазина
-   test-data: |
+  test-data: |
    no-data
-   steps:
+  steps:
    - Выбрать любого производителя из списка, например "Huawei".  
-   expected-result: |
+  expected-result: |
    Отображаются товары выбранного производителя
 
 - summary: |
