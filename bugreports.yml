@@ -85,14 +85,14 @@
 
 - summary: |
     Нет возможности искать товар по каталогу без привязки к страницам
-    environment: |
+ environment: |
     Yandex 23.11.3.935 (64-bit)
     ОС Windows 8.1
-    steps-to-reproduce: |
+ steps-to-reproduce: |
     Ввести в форму поиска название товара с любой страницы кроме главной, например "Plastic Table"
-    expected-result: |
+ expected-result: |
     На странице появляется нужный нам товар
-    actual-result: |
+ actual-result: |
     На странице появляется надпись "Ничего не найдено!" или "Nothing found!"
 
 - summary: |
